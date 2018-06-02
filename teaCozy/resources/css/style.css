@@ -1,0 +1,218 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-family: Helvetica, Arial, sans-serif;
+    color: white;
+    }
+
+body{
+    background: black;
+    font-size: 22px;
+    text-align: center;
+    }
+
+h1, h2, h3, h4{
+    margin: 0;
+    padding: 10px;
+    }
+
+h2{
+    font-size: 1.5em;
+    }
+
+h3{
+    font-size: 0.9em;   
+    }
+
+h4{ 
+    font-weight: 600;
+    font-size: 1.15em;
+    }
+
+h5{
+    font-size: 0.6em;
+    margin-bottom: 12px;
+    }
+
+/* __________HEADER__________ */
+
+header{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    
+    position: fixed;
+    z-index: 99;
+    
+    border-bottom: solid 1px seashell;
+
+    width: 100%;
+    height: 69px;
+    background: black;
+    }
+
+    .logo{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-left: 10px;
+        }
+    
+        .logo img{
+            width: auto;
+            height: 50px;
+            }
+
+    nav{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        margin-right: 10px;
+        }
+
+        nav li{
+            margin-left: 30px;
+            list-style: none;
+            display: inline-block;
+            }
+
+        nav a{
+            color: white;
+            text-decoration: underline;
+            }
+
+
+/* __________MAIN__________ */
+
+#main{
+    position: relative;
+    top: 69px;
+    z-index: 2;
+
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    }
+
+    /*___BLOCK 0NE___*/
+
+    .blockOne{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+
+        width: 1200px;
+        height: 700px;
+
+        background: url('../img/img-mission-background.jpg') no-repeat center;
+        }
+
+    
+    .blockOne article{
+        display: flex;
+        flex-flow: column nowrap;
+
+        background: black;
+        }
+    
+    /*___BLOCK TWO___*/
+
+    .blockTwo{
+        display: flex;
+        flex-flow: column nowrap;
+        margin-top: 30px;
+        
+        width: 1000px;
+        }
+
+        .blockTwo section{
+            display: flex;
+            flex-flow: column nowrap;
+            }
+        
+        
+        .blockTwo article{
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: center;
+
+            margin-top: 22px;
+            }
+
+        .contentIMG{
+            display: flex;
+            flex-flow: column nowrap;
+            margin: 0 10px 20px 10px;
+
+            width: 300px;
+            }
+        
+        .contentIMG last-child, .contentIMG first-child{
+            margin:0 0 20px 0;
+            }
+
+            .contentIMG img{
+                width: 100%;
+                height: auto;
+                margin-bottom: 10px;
+                }
+
+
+/*___BLOCK THREE___*/
+
+.blockThree{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+
+    width: 1200px;
+    height: 500px;
+
+    background: url('../img/img-locations-background.jpg') no-repeat center;
+    }
+
+    .blockThree section{
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: center;
+
+        margin-top: 15px;
+        line-height: 50px;
+        }
+
+    .blockThree article{
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        
+        width: 300px;
+        height: 300px;
+        background: black;
+        }
+
+    .blockThree article:nth-child(2){
+        margin: 0 40px;
+        }
+
+
+/* FOOTER */
+
+footer{
+    position: relative;
+    display: flex;
+    flex-flow: column nowrap;
+    top: 69px;
+
+    height: 200px;
+    margin-top: 30px;
+    }
+
+.copyright{
+    position: relative;
+    padding-left: 20px;
+    text-align: left;
+    top: 69px;
+    }
